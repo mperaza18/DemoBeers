@@ -49,6 +49,9 @@ Generated\ Files/
 TestResult.xml
 nunit-*.xml
 
+# Code Coverage Reports
+[Rr]eports*/
+
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/
@@ -376,4 +379,3 @@ FodyWeavers.xsd
 
 # Mac ds_store folder attributes information file
 .DS_Store
-/FunctionApp/DACH.BY.TargetProxy.UnitTest/ExecCodeCoverage.ps1

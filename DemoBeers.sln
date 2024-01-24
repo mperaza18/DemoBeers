@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Sol
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
+		unitTest3.png = unitTest3.png
+		unitTest4.png = unitTest4.png
+		unitTest5.png = unitTest5.png
+		unitTest6.png = unitTest6.png
 	EndProjectSection
 EndProject
 Global
