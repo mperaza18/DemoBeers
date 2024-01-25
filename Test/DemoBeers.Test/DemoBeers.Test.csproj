@@ -29,4 +29,10 @@
     <ProjectReference Include="..\..\src\DemoBeers.Persistance\DemoBeers.Persistance.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Stubs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Stubs\" />
+  </ItemGroup>
 </Project>
