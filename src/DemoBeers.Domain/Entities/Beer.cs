@@ -8,5 +8,6 @@
         public decimal AbvPercentage { get; set; }
         public int Ibu { get; set; }
         public string? Description { get; set; }
+        public bool WarningLabel { get; set; }
     }
 }

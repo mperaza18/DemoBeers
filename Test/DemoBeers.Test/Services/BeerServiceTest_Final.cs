@@ -63,5 +63,34 @@ namespace DemoBeers.Test.Services
             // Assert
             Assert.Equal(expectedBeers.Count, result.Count());
         }
+
+        [Fact]
+        public async Task WhenAbvIsGreatherThan5Percentage_ThenShouldSetWarningLabel()
+        {
+            // Arrenge
+            var beerId = 1;
+            // We can use Stub here.
+            var expectedBeer = new Beer
+            {
+                Id = 1,
+                Name = "Boston Lager",
+                Pack = "6, 12, 28",
+                AbvPercentage = 5.0m,
+                Ibu = 30,
+                Description = "An amber lager and the flagship product of Boston Brewing Company.",
+                WarningLabel = true
+            };
+
+            Mock.Get(_beersRepository)
+                .Setup(x => x.GetBeerByIdAsync(It.IsAny<int>()))
+                .Returns(Task.FromResult(expectedBeer))
+                .Verifiable();
+
+            // Act
+            var result = await _beerService.GetBeerByIdAsync(beerId);
+
+            // Assert
+            Assert.True(result.WarningLabel);
+        }
     }
 }
