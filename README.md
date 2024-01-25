@@ -7,7 +7,7 @@ https://github.com/jasontaylordev/CleanArchitecture
 * [Xunit](https://www.nuget.org/packages/xunit)
 
 ## Overview
-This project focus on the PIO Forecast workflow. The Azure Functions will fetch and process the data from the Proxy (Azure SQL Server) and present the outcome in an API Endpoint that will be consume by PowerApps.
+This project is part of the Unit Test 101 in .Net Demo. The purpose is to show the basic on how to add Unit Test to your projects. Plus some additional tools to generate the Code Coverage report.
 
 ## Getting Started
 TODO:
